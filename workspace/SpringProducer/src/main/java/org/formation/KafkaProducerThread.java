@@ -11,7 +11,7 @@ public class KafkaProducerThread implements Runnable {
 
 	public static String TOPIC ="position";
 	KafkaTemplate<Object, Object> template;
-	int nbMessages=10000;
+	int nbMessages=1000;
 	private Courier courier;
 	
 	public KafkaProducerThread(String id, KafkaTemplate<Object, Object> template ) {

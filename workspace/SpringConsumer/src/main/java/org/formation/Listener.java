@@ -37,5 +37,6 @@ public class Listener {
 			logger.info("Thread : " + Thread.currentThread().getId() + " Process " + nbMessages + " in " + elapsedTime
 					+ "ms Débit : " + ((float)nbMessages / (float)elapsedTime)*100 +" msg/s");
 		}
+		logger.debug(record.key()+"/"+record.value().getIndex());
 	}
 }

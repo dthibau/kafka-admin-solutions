@@ -16,7 +16,7 @@ public class SpringProducerApplication implements CommandLineRunner {
 	@Autowired
 	private KafkaTemplate<Object, Object> template;
 	
-	static int nbThreads = 100;
+	static int nbThreads = 10;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringProducerApplication.class, args);

@@ -10,11 +10,15 @@ spring:
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.formation.model.JsonDeserializer
+      enable-auto-commit: true
         
     listener:
       concurrency: 3 
 
-      
+logging:
+  level:
+    root: info
+    '[org.formation]': debug       
       
       
 #logging:

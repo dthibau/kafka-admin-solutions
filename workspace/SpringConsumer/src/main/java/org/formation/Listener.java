@@ -21,7 +21,6 @@ public class Listener {
 
 	@KafkaListener(topics = "position")
 	public void listenPartition0(ConsumerRecord<String, Message> record) throws InterruptedException {
-//		logger.info(lastIndex.get(record.key())+":"+record.value().getIndex());
 		if (start == -1) {
 			start = System.currentTimeMillis();
 		}
@@ -36,7 +35,7 @@ public class Listener {
 		long elapsedTime = System.currentTimeMillis() - start;
 		if (nbMessages % 1000 == 0) {
 			logger.info("Thread : " + Thread.currentThread().getId() + " Process " + nbMessages + " in " + elapsedTime
-					+ "ms Débit : " + ((float)nbMessages / (float)elapsedTime));
+					+ "ms Débit : " + ((float)nbMessages / (float)elapsedTime)*100 +" msg/s");
 		}
 	}
 }

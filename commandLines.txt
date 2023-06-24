@@ -17,3 +17,6 @@ Dans une autre fenêtre :
 
 ./kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 2 --partitions 3 --topic position
 
+############## Démarrage Kafka Connect
+bin/connect-standalone.sh ../../github/solutions/connect-conf/connect-standalone.properties ../../github/solutions/connect-conf/elasticsearch-connect.properties 
+

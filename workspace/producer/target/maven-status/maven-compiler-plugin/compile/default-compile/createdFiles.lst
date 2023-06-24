@@ -1,0 +1,9 @@
+org/formation/ProducerCallback.class
+org/formation/model/SendMode.class
+org/formation/KafkaProducerThread$1.class
+org/formation/model/Position.class
+org/formation/KafkaProducerApplication.class
+org/formation/model/Courier.class
+org/formation/model/JsonDeserializer.class
+org/formation/KafkaProducerThread.class
+org/formation/model/JsonSerializer.class

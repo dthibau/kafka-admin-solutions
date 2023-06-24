@@ -4,10 +4,17 @@ spring:
   kafka:
     producer:
       bootstrap-servers:
-      - localhost:9092
-      - localhost:9192
-      - localhost:9292
+      - localhost:9094
+      - localhost:9194
+      - localhost:9294
       key-serializer:
         org.apache.kafka.common.serialization.StringSerializer
       value-serializer:
         org.formation.model.JsonSerializer 
+      ssl:
+        trust-store-location: file:///home/dthibau/Formations/Kafka/github/solutions/ssl/truststore/kafka.truststore.jks
+        trust-store-password: secret
+      security:
+        protocol: SSL  
+       
+        

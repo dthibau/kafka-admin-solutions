@@ -11,4 +11,3 @@ spring:
         org.apache.kafka.common.serialization.StringSerializer
       value-serializer:
         org.formation.model.JsonSerializer 
-      retries: 2

@@ -1,8 +1,0 @@
-/home/dthibau/Formations/Kafka/github/solutions/workspace/producer/src/main/java/org/formation/ProducerCallback.java
-/home/dthibau/Formations/Kafka/github/solutions/workspace/producer/src/main/java/org/formation/model/JsonDeserializer.java
-/home/dthibau/Formations/Kafka/github/solutions/workspace/producer/src/main/java/org/formation/KafkaProducerApplication.java
-/home/dthibau/Formations/Kafka/github/solutions/workspace/producer/src/main/java/org/formation/model/Courier.java
-/home/dthibau/Formations/Kafka/github/solutions/workspace/producer/src/main/java/org/formation/model/SendMode.java
-/home/dthibau/Formations/Kafka/github/solutions/workspace/producer/src/main/java/org/formation/KafkaProducerThread.java
-/home/dthibau/Formations/Kafka/github/solutions/workspace/producer/src/main/java/org/formation/model/Position.java
-/home/dthibau/Formations/Kafka/github/solutions/workspace/producer/src/main/java/org/formation/model/JsonSerializer.java

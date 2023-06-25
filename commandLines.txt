@@ -20,3 +20,18 @@ Dans une autre fenêtre :
 ############## Démarrage Kafka Connect
 bin/connect-standalone.sh ../../github/solutions/connect-conf/connect-standalone.properties ../../github/solutions/connect-conf/elasticsearch-connect.properties 
 
+
+############## TOPICS / PARTITION
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --alter --topic position --partitions 8
+
+-- Format New Broker
+bin/kafka-storage.sh format -t dzaHVk9fRLCwYLqLwsbaoA -c ../../github/solutions/kafka-cluster/broker-4/server.properties
+
+./kafka-reassign-partitions.sh --bootstrap-server localhost:9092 --broker-list "1,2,3,4" --topics-to-move-json-file ../../../github/solutions/expand-cluster/topics-to-move.json --generate
+
+./kafka-reassign-partitions.sh --bootstrap-server localhost:9092 --reassignment-json-file ../../../github/solutions/expand-cluster-reassignment.json --execute
+
+./kafka-reassign-partitions.sh ----bootstrap-server localhost:9092 --reassignment-json-file ../../../github/solutions/expand-cluster-reassignment.json --verify
+
+
+

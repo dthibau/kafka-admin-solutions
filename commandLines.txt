@@ -31,7 +31,8 @@ bin/kafka-storage.sh format -t dzaHVk9fRLCwYLqLwsbaoA -c ../../github/solutions/
 
 ./kafka-reassign-partitions.sh --bootstrap-server localhost:9092 --reassignment-json-file ../../../github/solutions/expand-cluster-reassignment.json --execute
 
-./kafka-reassign-partitions.sh ----bootstrap-server localhost:9092 --reassignment-json-file ../../../github/solutions/expand-cluster-reassignment.json --verify
+./kafka-reassign-partitions.sh --bootstrap-server localhost:9092 --reassignment-json-file ../../../github/solutions/expand-cluster-reassignment.json --verify
 
-
+################ LOGS
+./kafka-configs.sh --bootstrap-server localhost:9092 --entity-type topics --entity-name position --alter --add-config retention.bytes=512000
 
